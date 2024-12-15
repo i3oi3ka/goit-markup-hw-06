@@ -28,12 +28,17 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header hide" id="header">
+    <header class="header" id="header">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo header-logo">
             Web<span class="logo-dark">Studio</span>
           </a>
+          <button class="mobile-menu-btn" type="button">
+            <svg class="mobile-menu-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#mobile-menu"></use>
+            </svg>
+          </button>
           <ul class="header-nav-list">
             <li class="header-nav-item card-set-item">
               <a href="#header" class="header-nav-link active">Studio</a>
@@ -48,12 +53,12 @@
         </nav>
         <address class="address">
           <ul class="address-list">
-            <li class="address-i card-set-itemtem">
+            <li class="address-item card-set-item">
               <a href="mailto:info@devstudio.com" class="address-link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="address-i card-set-itemtem">
+            <li class="address-item card-set-item">
               <a href="tel:+110001111111" class="address-link"
                 >+11 (000) 111-11-11</a
               >
@@ -64,7 +69,7 @@
     </header>
     <main>
       <!-- hero -->
-      <section class="hero hide">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button type="button" class="btn btn-hero">Order Service</button>
@@ -75,7 +80,7 @@
         <div class="container">
           <h2 class="visually-hidden">about</h2>
           <ul class="about-list card-set">
-            <li class="about-ite card-set-item">
+            <li class="about-item card-set-item">
               <div class="icon-container">
                 <svg class="about-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
@@ -87,7 +92,7 @@
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="about-ite card-set-item">
+            <li class="about-item card-set-item">
               <div class="icon-container">
                 <svg class="about-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
@@ -99,7 +104,7 @@
                 within the shortest possible time.
               </p>
             </li>
-            <li class="about-ite card-set-item">
+            <li class="about-item card-set-item">
               <div class="icon-container">
                 <svg class="about-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
@@ -111,7 +116,7 @@
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="about-ite card-set-item">
+            <li class="about-item card-set-item">
               <div class="icon-container">
                 <svg class="about-item-icon" width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
@@ -511,7 +516,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer hide" id="contacts">
+    <footer class="footer" id="contacts">
       <div class="footer-container container">
         <div class="footer-slogan">
           <a class="footer-logo logo" href="./index.html">
@@ -674,20 +679,88 @@
                   <use href="./images/icons.svg#checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a
-                class="modal-form-agreement-link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
+              <span class="modal-form-agreement-text"
+                >I accept the terms and conditions of the
+                <a
+                  class="modal-form-agreement-link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Privacy Policy
+                </a></span
               >
-                Privacy Policy
-              </a>
             </label>
           </div>
           <button class="btn btn-modal" type="submit">Send</button>
         </form>
       </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <button class="mobile-menu-close-btn modal-close-btn" type="button">
+        <svg
+          class="mobile-menu-close-icon modal-close-icon"
+          width="8"
+          height="8"
+        >
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu-nav">
+        <li class="mobile-menu-nav-item">
+          <a href="#studio" class="mobile-menu-nav-link active">Studio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#portfolio" class="mobile-menu-nav-link">Portfolio</a>
+        </li>
+        <li class="mobile-menu-nav-item">
+          <a href="#contacts" class="mobile-menu-nav-link">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu-contacts">
+        <li class="mobile-menu-contacts-item accent">
+          <a class="mobile-menu-contacts-link accent" href="tel:+110001111111">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+        <li class="mobile-menu-contacts-item">
+          <a class="mobile-menu-contacts-link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="" class="social-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="" class="social-link">
+            <svg class="social-icon" width="24" height="24">
+              <use href="./images/icons.svg#linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </div>
   </body>
 </html>
