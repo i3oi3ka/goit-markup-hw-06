@@ -628,7 +628,7 @@ address {
 
 @media screen and (min-width: 1168px) {
   .footer {
-    padding: 100px 0;
+    padding: 100px 0px;
   }
 }
 
@@ -641,8 +641,7 @@ address {
 
 @media screen and (min-width: 768px) {
   .footer-container {
-    padding-left: 92px;
-    display: flex;
+    padding-left: 108px;
     text-align: left;
     flex-direction: row;
     flex-wrap: wrap;
@@ -653,13 +652,18 @@ address {
 
 @media screen and (min-width: 1168px) {
   .footer-container {
-    padding-left: 0;
+    padding-left: 16px;
+    flex-wrap: nowrap;
   }
 }
 
 @media screen and (min-width: 1168px) {
   .footer-slogan {
-    flex-grow: 1;
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
   }
 }
 
@@ -682,9 +686,7 @@ address {
   color: rgb(var(--cl-white));
 }
 
-.footer-socdisplay: flex;
-align-items: center;
-al-list {
+.footer-social-list {
   gap: 16px;
 }
 
