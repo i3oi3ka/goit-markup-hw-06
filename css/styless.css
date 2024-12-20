@@ -465,9 +465,28 @@ address {
 /* #endregion */
 
 /* #region About */
-@media screen and (max-width: 767px) {
+
+.about-subtitle {
+  font-size: 36px;
+  line-height: 111%;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
   .about-subtitle {
-    text-align: center;
+    text-align: left;
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1168px) {
+  .about-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
   }
 }
 
@@ -481,6 +500,9 @@ address {
   .about-list {
     --items: 4;
   }
+}
+
+.about-subtitle {
 }
 
 .icon-container {
